@@ -20,6 +20,10 @@ char *sock_file = "beleth.sock";
 char username[50] = "root";
 char cmdline[256] = "uname -a && id";
 unsigned int sleep_timeout = 400; /* used for usleep on reconnects */
+int verbose = 0;
+struct pw_list *pw_head;
+struct pw_list *pw_tail;
+struct t_ctx *t_current;
 
 /*
  * Add each line of the wordlist to the linked list

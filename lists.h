@@ -19,7 +19,7 @@ struct t_ctx
 	LIBSSH2_SESSION *session;
 };
 
-struct t_ctx *t_current;
+extern struct t_ctx *t_current;
 
 /* Linked list structure to hold the word list */
 struct pw_list
@@ -28,8 +28,8 @@ struct pw_list
     struct pw_list *next;
 };
 
-struct pw_list *pw_head;
-struct pw_list *pw_tail;
+extern struct pw_list *pw_head;
+extern struct pw_list *pw_tail;
 
 /* Thread context initialization */
 int init_thread_ctx(char *host, int port, struct t_ctx *ptr);

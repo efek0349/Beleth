@@ -9,7 +9,7 @@
 #include "lists.h"
 
 /* Globals */
-int verbose; /* Level of verboseness */
+extern int verbose; /* Level of verboseness */
 
 /* Functions */
 int read_wordlist(char *path);
